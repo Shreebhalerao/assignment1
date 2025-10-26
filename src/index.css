@@ -1,0 +1,22 @@
+/* --- Only ONE Tailwind Import --- */
+@import "tailwindcss";
+
+body {
+  @apply bg-[#1a1d21] text-gray-300;
+}
+
+/* --- The Scrollbar Hiding Rules ---
+   This has been updated to ensure high specificity.
+*/
+.scrollbar-hide {
+  /* For Firefox and IE/Edge, the main element property still applies */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Targeting the specific element and its pseudo-element for Chrome/Safari */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0 !important; /* Forces the width to zero */
+  height: 0 !important; /* Forces the height to zero (for horizontal scrollbars) */
+  display: none !important; /* The original hiding rule, now strongly enforced */
+}

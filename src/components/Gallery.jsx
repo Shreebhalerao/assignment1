@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Card from "./Card";
 import { Plus } from "lucide-react";
 import { FaArrowRight, FaArrowLeft, FaQuestion } from "react-icons/fa6";
-import Button from "./btn";
+import Btn  from "./btn";
 
 const Gallery = () => {
   const scrollRef = useRef();
@@ -52,7 +52,7 @@ const Gallery = () => {
 
           <div className="flex items-center gap-4 -mt-2">
             <div className="mr-6">
-              <Button />
+              <Btn />
             </div>
 
             <button
